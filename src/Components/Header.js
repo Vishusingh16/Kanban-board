@@ -3,6 +3,7 @@ import logo from '../assets/logo-mobile.svg'
 import iconDown from '../assets/icon-chevron-down.svg'
 import iconUp from '../assets/icon-chevron-up.svg'
 import elipsis from "../assets/icon-vertical-ellipsis.svg"
+import HeaderDropDown from '../Components/HeaderDropDown';
 
 const Header=()=>{
     const [openDropdown , setOpenDropdown] = useState(false)
@@ -39,6 +40,7 @@ const Header=()=>{
 
 
         </header>
+            {openDropdown && < HeaderDropDown  setOpenDropdown ={setOpenDropdown}/>}
       
 
     </div>
